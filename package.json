@@ -1,0 +1,55 @@
+{
+  "name": "koa-ws-socket",
+  "version": "0.0.0-semantically-released",
+  "description":
+    "Attaches ws sockets to koa and allows koa-style middleware for them",
+  "files": ["dist"],
+  "main": "dist/koa-ws-socket.umd.js",
+  "module": "dist/koa-ws-socket.es5.js",
+  "typings": "dist/types/koa-ws-socket.d.ts",
+  "repository": "https://github.com/pbomb/koa-ws-socket.git",
+  "author": "Matt Parrish <matt.r.parrish@gmail.com>",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "add-contributor": "kcd-scripts contributors add",
+    "prebuild": "rimraf dist && rimraf compiled",
+    "build":
+      "npm run tsc && BUILD_INPUT=compiled/index.js kcd-scripts build --bundle --no-clean",
+    "lint":
+      "tslint -c tslint.json -e **/node_modules/**/* -e **/typings/**/* **/*.ts",
+    "test": "kcd-scripts test",
+    "test:cover": "kcd-scripts test --coverage",
+    "test:update": "npm run test:cover -s -- --updateSnapshot",
+    "test:build": "kcd-scripts test --no-watch",
+    "build-and-test": "npm run build -s && npm run test:build -s",
+    "validate": "kcd-scripts validate lint,build-and-test,test:cover",
+    "precommit": "kcd-scripts precommit",
+    "prettier": "prettier --write \"**/*.ts\" \"**/*.js{,on}\"",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "21.1.2",
+    "@types/koa": "2.0.39",
+    "kcd-scripts": "0.24.0",
+    "koa": "2.3.0",
+    "prettier": "1.7.4",
+    "rimraf": "2.6.2",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "tslint": "5.7.0",
+    "typescript": "2.5.3",
+    "ws": "3.2.0"
+  },
+  "peerDependencies": {
+    "koa": ">=2",
+    "ws": ">=3"
+  },
+  "lint-staged": {
+    "*.ts": ["prettier --write", "git add"],
+    "*.js": ["prettier --write", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  }
+}
