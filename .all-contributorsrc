@@ -1,0 +1,23 @@
+{
+  "projectName": "koa-ws-socket",
+  "projectOwner": "pbomb",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "pbomb",
+      "name": "Matt Parrish",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1402095?v=4",
+      "profile": "https://github.com/pbomb",
+      "contributions": [
+        "code",
+        "doc",
+        "test",
+        "review"
+      ]
+    }
+  ]
+}
