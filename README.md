@@ -1,5 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [koa-ws-socket](#koa-ws-socket)
+  - [Contributors](#contributors)
+  - [LICENSE](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # koa-ws-socket
-Attaches ws sockets to koa and allows koa-style middleware for them
+Attaches [ws](https://github.com/websockets/ws) sockets to koa using koa-style middleware.
 
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
