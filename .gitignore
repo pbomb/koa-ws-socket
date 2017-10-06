@@ -17,20 +17,8 @@ lib-cov
 # Coverage directory
 coverage
 
-# nyc test coverage
-.nyc_output
-
 # Dependency directories
 node_modules/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
 
 # Yarn Integrity file
 .yarn-integrity
@@ -38,6 +26,7 @@ node_modules/
 # dotenv environment variables file
 .env
 .vscode
+.rpt2_cache
 
 # Build directories
 compiled
