@@ -100,14 +100,7 @@ export class WsSocket {
    * @return this
    */
   on(event: string, handler: EventHandler) {
-    const listeners = this.listeners.get(event);
-
-    // If this is a new event then just set it
-    if (!listeners) {
-      this.listeners.set(event, [handler]);
-      this.updateConnections();
-      return this;
-    }
+    const listeners = this.listeners.get(event) || [];
 
     listeners.push(handler);
     this.listeners.set(event, listeners);
