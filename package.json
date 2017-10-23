@@ -54,5 +54,10 @@
   "dependencies": {
     "base64id": "^1.0.0",
     "koa-compose": "^4.0.0"
+  },
+  "release": {
+    "analyzeCommits": {
+      "releaseRules": [{ "type": "refactor", "release": "patch" }]
+    }
   }
 }
