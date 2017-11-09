@@ -1,10 +1,11 @@
 import * as http from 'http';
 import { TlsOptions } from 'tls';
 import * as Koa from 'koa';
-import compose from 'koa-compose';
+import * as composeTypes from 'koa-compose';
 import * as WebSocket from 'ws';
 import Base64Id from 'base64id';
 import Socket from './socket';
+const compose = require('koa-compose');
 
 export interface SocketContext {
   data: any;
@@ -17,7 +18,7 @@ export type Middleware = (ctx: SocketContext, next: () => Promise<any>) => any;
 
 export class WsSocket {
   middleware: Middleware[] = [];
-  composed: compose.ComposedMiddleware<SocketContext> | null = null;
+  composed: composeTypes.ComposedMiddleware<SocketContext> | null = null;
   connections: Map<string, Socket> = new Map();
   listeners: Map<string, EventHandler[]> = new Map();
   wss: WebSocket.Server | null = null;
