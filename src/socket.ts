@@ -1,7 +1,7 @@
 import * as compose from 'koa-compose';
 import * as http from 'http';
 import * as WebSocket from 'ws';
-import { EventHandler, Middleware, SocketContext } from './index';
+import { EventHandler, SocketContext } from './index';
 
 export default class Socket {
   middleware: compose.ComposedMiddleware<SocketContext> | null;
@@ -12,7 +12,7 @@ export default class Socket {
     ws: WebSocket,
     request: http.ServerRequest,
     listeners: Map<string, EventHandler[]>,
-    middleware: Middleware | null
+    middleware: compose.ComposedMiddleware<SocketContext> | null
   ) {
     this.ws = ws;
     this.request = request;
@@ -23,7 +23,7 @@ export default class Socket {
 
   update(
     listeners: Map<string, EventHandler[]>,
-    middleware: Middleware | null
+    middleware: compose.ComposedMiddleware<SocketContext> | null
   ) {
     this.ws.removeAllListeners();
     this.middleware = middleware;
