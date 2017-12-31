@@ -51,14 +51,18 @@ export default class Socket {
         socket: this.ws,
       };
 
-      if (!this.middleware) {
-        handler(ctx, message);
-        return;
-      }
+      this.invokeHandler(handler, ctx, message);
+    });
+  }
 
-      this.middleware(ctx).then(() => {
-        handler(ctx, message);
-      });
+  invokeHandler(handler: EventHandler, ctx: SocketContext, message: any) {
+    if (!this.middleware) {
+      handler(ctx, message);
+      return;
+    }
+
+    this.middleware(ctx, async () => {
+      handler(ctx, message);
     });
   }
 }
