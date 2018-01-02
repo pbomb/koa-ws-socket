@@ -31,3 +31,5 @@ node_modules/
 # Build directories
 compiled
 dist
+
+.eslintcache

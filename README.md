@@ -17,7 +17,7 @@ Attaches [ws](https://github.com/websockets/ws) sockets to koa using koa-style m
 [![downloads][downloads-badge]][npmcharts]
 [![MIT License][license-badge]][LICENSE]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs]
 [![Code of Conduct][coc-badge]][coc]
 
@@ -26,8 +26,8 @@ Attaches [ws](https://github.com/websockets/ws) sockets to koa using koa-style m
 Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars0.githubusercontent.com/u/1402095?v=4" width="100px;"/><br /><sub>Matt Parrish</sub>](https://github.com/pbomb)<br />[💻](https://github.com/pbomb/koa-ws-socket/commits?author=pbomb "Code") [📖](https://github.com/pbomb/koa-ws-socket/commits?author=pbomb "Documentation") [⚠️](https://github.com/pbomb/koa-ws-socket/commits?author=pbomb "Tests") [👀](#review-pbomb "Reviewed Pull Requests") |
-| :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/1402095?v=4" width="100px;"/><br /><sub>Matt Parrish</sub>](https://github.com/pbomb)<br />[💻](https://github.com/pbomb/koa-ws-socket/commits?author=pbomb "Code") [📖](https://github.com/pbomb/koa-ws-socket/commits?author=pbomb "Documentation") [⚠️](https://github.com/pbomb/koa-ws-socket/commits?author=pbomb "Tests") [👀](#review-pbomb "Reviewed Pull Requests") | [<img src="https://avatars3.githubusercontent.com/u/1319157?v=4" width="100px;"/><br /><sub>mateuscb</sub>](https://github.com/mateuscb)<br />[💻](https://github.com/pbomb/koa-ws-socket/commits?author=mateuscb "Code") [⚠️](https://github.com/pbomb/koa-ws-socket/commits?author=mateuscb "Tests") |
+| :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
