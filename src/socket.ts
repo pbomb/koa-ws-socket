@@ -55,14 +55,12 @@ export default class Socket {
     });
   }
 
-  invokeHandler(handler: EventHandler, ctx: SocketContext, message: any) {
+  async invokeHandler(handler: EventHandler, ctx: SocketContext, message: any) {
     if (!this.middleware) {
-      handler(ctx, message);
+      await handler(ctx, message);
       return;
     }
 
-    this.middleware(ctx, async () => {
-      handler(ctx, message);
-    });
+    await this.middleware(ctx, () => handler(ctx, message));
   }
 }
