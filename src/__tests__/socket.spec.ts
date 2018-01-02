@@ -5,6 +5,7 @@ describe('Socket', () => {
   let MockWebSocket: any;
 
   beforeEach(async () => {
+    jest.useRealTimers();
     MockWebSocket = {
       on: jest.fn(),
       removeAllListeners: jest.fn(),
@@ -20,34 +21,37 @@ describe('Socket', () => {
       context = { state: '' };
 
       handler = jest.fn(async (ctx, next) => {
-        ctx.state += '[handler]';
+        return new Promise(resolve => {
+          setTimeout(() => {
+            ctx.state += '[handler]';
+            resolve();
+          }, 100);
+        });
       });
     });
 
-    describe('Socket is created with at one middleware', () => {
+    describe('Socket is created with one middleware', () => {
       let middleware;
 
       beforeEach(async () => {
-        context = { state: '' };
-
         middleware = compose([
-          jest.fn(async (ctx, next) => {
+          async (ctx, next) => {
             ctx.state += '[before]';
-            next(ctx);
+            await next(ctx);
             ctx.state += '[after]';
-          }),
+          },
         ]);
 
         socket = new Socket(MockWebSocket, null as any, [] as any, middleware);
       });
 
-      it('invokes handler once', () => {
-        socket.invokeHandler(handler, context, 'message');
+      it('invokes handler once', async () => {
+        await socket.invokeHandler(handler, context, 'message');
         expect(handler).toHaveBeenCalledTimes(1);
       });
 
-      it('invokes the handler in correct order', () => {
-        socket.invokeHandler(handler, context, 'message');
+      it('invokes the handler in correct order', async () => {
+        await socket.invokeHandler(handler, context, 'message');
 
         expect(context).toEqual({ state: '[before][handler][after]' });
       });
@@ -58,8 +62,8 @@ describe('Socket', () => {
         socket = new Socket(MockWebSocket, null as any, [] as any, compose([]));
       });
 
-      it('invokes the handler correctly', () => {
-        socket.invokeHandler(handler, context, 'message');
+      it('invokes the handler correctly', async () => {
+        await socket.invokeHandler(handler, context, 'message');
 
         expect(context).toEqual({ state: '[handler]' });
       });
