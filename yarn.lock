@@ -4,7 +4,7 @@
 
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.36"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/code-frame/-/code-frame-7.0.0-beta.36.tgz#2349d7ec04b3a06945ae173280ef8579b63728e4"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.36.tgz#2349d7ec04b3a06945ae173280ef8579b63728e4"
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
@@ -125,7 +125,7 @@ acorn-globals@^3.1.0:
 
 acorn-globals@^4.0.0:
   version "4.1.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/acorn-globals/-/acorn-globals-4.1.0.tgz#ab716025dbe17c54d3ef81d32ece2b2d99fe2538"
+  resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-4.1.0.tgz#ab716025dbe17c54d3ef81d32ece2b2d99fe2538"
   dependencies:
     acorn "^5.0.0"
 
@@ -149,7 +149,7 @@ acorn@^5.0.0, acorn@^5.1.1:
 
 acorn@^5.1.2:
   version "5.3.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/acorn/-/acorn-5.3.0.tgz#7446d39459c54fb49a80e6ee6478149b940ec822"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.3.0.tgz#7446d39459c54fb49a80e6ee6478149b940ec822"
 
 acorn@^5.2.1:
   version "5.2.1"
@@ -298,7 +298,7 @@ array-equal@^1.0.0:
 
 array-filter@~0.0.0:
   version "0.0.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
+  resolved "https://registry.yarnpkg.com/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
 
 array-find@^1.0.0:
   version "1.0.0"
@@ -313,11 +313,11 @@ array-includes@^3.0.3:
 
 array-map@~0.0.0:
   version "0.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
+  resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
 
 array-reduce@~0.0.0:
   version "0.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
+  resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -685,7 +685,7 @@ babel-plugin-jest-hoist@^21.2.0:
 
 babel-plugin-jest-hoist@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.0.3.tgz#62cde5fe962fd41ae89c119f481ca5cd7dd48bb4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.0.3.tgz#62cde5fe962fd41ae89c119f481ca5cd7dd48bb4"
 
 babel-plugin-minify-dead-code-elimination@^0.2.0:
   version "0.2.0"
@@ -1046,7 +1046,7 @@ babel-preset-jest@^21.2.0:
 
 babel-preset-jest@^22.0.1:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-preset-jest/-/babel-preset-jest-22.0.3.tgz#e2bb6f6b4a509d3ea0931f013db78c5a84856693"
+  resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-22.0.3.tgz#e2bb6f6b4a509d3ea0931f013db78c5a84856693"
   dependencies:
     babel-plugin-jest-hoist "^22.0.3"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
@@ -1242,7 +1242,7 @@ brorand@^1.0.1:
 
 browser-process-hrtime@^0.1.2:
   version "0.1.2"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/browser-process-hrtime/-/browser-process-hrtime-0.1.2.tgz#425d68a58d3447f02a04aa894187fce8af8b7b8e"
+  resolved "https://registry.yarnpkg.com/browser-process-hrtime/-/browser-process-hrtime-0.1.2.tgz#425d68a58d3447f02a04aa894187fce8af8b7b8e"
 
 browser-resolve@^1.11.0, browser-resolve@^1.11.2:
   version "1.11.2"
@@ -1642,7 +1642,7 @@ cosmiconfig@^1.1.0:
 
 cpx@^1.5.0:
   version "1.5.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/cpx/-/cpx-1.5.0.tgz#185be018511d87270dedccc293171e37655ab88f"
+  resolved "https://registry.yarnpkg.com/cpx/-/cpx-1.5.0.tgz#185be018511d87270dedccc293171e37655ab88f"
   dependencies:
     babel-runtime "^6.9.2"
     chokidar "^1.6.0"
@@ -1905,7 +1905,7 @@ domelementtype@~1.1.1:
 
 domexception@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/domexception/-/domexception-1.0.0.tgz#81fe5df81b3f057052cde3a9fa9bf536a85b9ab0"
+  resolved "https://registry.yarnpkg.com/domexception/-/domexception-1.0.0.tgz#81fe5df81b3f057052cde3a9fa9bf536a85b9ab0"
 
 domhandler@^2.3.0:
   version "2.4.1"
@@ -1922,7 +1922,7 @@ domutils@^1.5.1:
 
 duplexer@^0.1.1:
   version "0.1.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
+  resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -2384,7 +2384,7 @@ expect@^21.2.1:
 
 expect@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/expect/-/expect-22.0.3.tgz#bb486de7d41bf3eb60d3b16dfd1c158a4d91ddfa"
+  resolved "https://registry.yarnpkg.com/expect/-/expect-22.0.3.tgz#bb486de7d41bf3eb60d3b16dfd1c158a4d91ddfa"
   dependencies:
     ansi-styles "^3.2.0"
     jest-diff "^22.0.3"
@@ -2491,7 +2491,7 @@ find-babel-config@^1.0.1:
 
 find-index@^0.1.1:
   version "0.1.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/find-index/-/find-index-0.1.1.tgz#675d358b2ca3892d795a1ab47232f8b6e2e0dde4"
+  resolved "https://registry.yarnpkg.com/find-index/-/find-index-0.1.1.tgz#675d358b2ca3892d795a1ab47232f8b6e2e0dde4"
 
 find-root@^0.1.1:
   version "0.1.2"
@@ -2559,7 +2559,7 @@ fresh@^0.5.2:
 
 fs-extra@4.0.3:
   version "4.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -2669,7 +2669,7 @@ glob-parent@^2.0.0:
 
 glob2base@^0.0.12:
   version "0.0.12"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/glob2base/-/glob2base-0.0.12.tgz#9d419b3e28f12e83a362164a277055922c9c0d56"
+  resolved "https://registry.yarnpkg.com/glob2base/-/glob2base-0.0.12.tgz#9d419b3e28f12e83a362164a277055922c9c0d56"
   dependencies:
     find-index "^0.1.1"
 
@@ -3365,7 +3365,7 @@ jest-config@^21.2.1:
 
 jest-config@^22.0.1:
   version "22.0.4"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-config/-/jest-config-22.0.4.tgz#9c2a46c0907b1a1af54d9cdbf18e99b447034e11"
+  resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-22.0.4.tgz#9c2a46c0907b1a1af54d9cdbf18e99b447034e11"
   dependencies:
     chalk "^2.0.1"
     glob "^7.1.1"
@@ -3390,7 +3390,7 @@ jest-diff@^21.2.1:
 
 jest-diff@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-diff/-/jest-diff-22.0.3.tgz#ffed5aba6beaf63bb77819ba44dd520168986321"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-22.0.3.tgz#ffed5aba6beaf63bb77819ba44dd520168986321"
   dependencies:
     chalk "^2.0.1"
     diff "^3.2.0"
@@ -3411,7 +3411,7 @@ jest-environment-jsdom@^21.2.1:
 
 jest-environment-jsdom@^22.0.4:
   version "22.0.4"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-environment-jsdom/-/jest-environment-jsdom-22.0.4.tgz#5723d4e724775ed38948de792e62f2d6a7f452df"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-22.0.4.tgz#5723d4e724775ed38948de792e62f2d6a7f452df"
   dependencies:
     jest-mock "^22.0.3"
     jest-util "^22.0.4"
@@ -3426,7 +3426,7 @@ jest-environment-node@^21.2.1:
 
 jest-environment-node@^22.0.4:
   version "22.0.4"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-environment-node/-/jest-environment-node-22.0.4.tgz#068671f85a545f96a5469be3a3dd228fca79c709"
+  resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-22.0.4.tgz#068671f85a545f96a5469be3a3dd228fca79c709"
   dependencies:
     jest-mock "^22.0.3"
     jest-util "^22.0.4"
@@ -3437,7 +3437,7 @@ jest-get-type@^21.2.0:
 
 jest-get-type@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-get-type/-/jest-get-type-22.0.3.tgz#fa894b677c0fcd55eff3fd8ee28c7be942e32d36"
+  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-22.0.3.tgz#fa894b677c0fcd55eff3fd8ee28c7be942e32d36"
 
 jest-haste-map@^21.2.0:
   version "21.2.0"
@@ -3465,7 +3465,7 @@ jest-jasmine2@^21.2.1:
 
 jest-jasmine2@^22.0.4:
   version "22.0.4"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-jasmine2/-/jest-jasmine2-22.0.4.tgz#f7c0965116efe831ec674dc954b0134639b3dcee"
+  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-22.0.4.tgz#f7c0965116efe831ec674dc954b0134639b3dcee"
   dependencies:
     callsites "^2.0.0"
     chalk "^2.0.1"
@@ -3487,7 +3487,7 @@ jest-matcher-utils@^21.2.1:
 
 jest-matcher-utils@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-matcher-utils/-/jest-matcher-utils-22.0.3.tgz#2ec15ca1af7dcabf4daddc894ccce224b948674e"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-22.0.3.tgz#2ec15ca1af7dcabf4daddc894ccce224b948674e"
   dependencies:
     chalk "^2.0.1"
     jest-get-type "^22.0.3"
@@ -3503,7 +3503,7 @@ jest-message-util@^21.2.1:
 
 jest-message-util@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-message-util/-/jest-message-util-22.0.3.tgz#bf674b2762ef2dd53facf2136423fcca264976df"
+  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-22.0.3.tgz#bf674b2762ef2dd53facf2136423fcca264976df"
   dependencies:
     "@babel/code-frame" "^7.0.0-beta.35"
     chalk "^2.0.1"
@@ -3517,7 +3517,7 @@ jest-mock@^21.2.0:
 
 jest-mock@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-mock/-/jest-mock-22.0.3.tgz#c875e47b5b729c6c020a2fab317b275c0cf88961"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-22.0.3.tgz#c875e47b5b729c6c020a2fab317b275c0cf88961"
 
 jest-regex-util@^21.2.0:
   version "21.2.0"
@@ -3525,7 +3525,7 @@ jest-regex-util@^21.2.0:
 
 jest-regex-util@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-regex-util/-/jest-regex-util-22.0.3.tgz#c5c10229de5ce2b27bf4347916d95b802ae9aa4d"
+  resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-22.0.3.tgz#c5c10229de5ce2b27bf4347916d95b802ae9aa4d"
 
 jest-resolve-dependencies@^21.2.0:
   version "21.2.0"
@@ -3543,7 +3543,7 @@ jest-resolve@^21.2.0:
 
 jest-resolve@^22.0.4:
   version "22.0.4"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-resolve/-/jest-resolve-22.0.4.tgz#a6e47f55e9388c7341b5e9732aedc6fe30906121"
+  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-22.0.4.tgz#a6e47f55e9388c7341b5e9732aedc6fe30906121"
   dependencies:
     browser-resolve "^1.11.2"
     chalk "^2.0.1"
@@ -3598,7 +3598,7 @@ jest-snapshot@^21.2.1:
 
 jest-snapshot@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-snapshot/-/jest-snapshot-22.0.3.tgz#a949b393781d2fdb4773f6ea765dd67ad1da291e"
+  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-22.0.3.tgz#a949b393781d2fdb4773f6ea765dd67ad1da291e"
   dependencies:
     chalk "^2.0.1"
     jest-diff "^22.0.3"
@@ -3621,7 +3621,7 @@ jest-util@^21.2.1:
 
 jest-util@^22.0.4:
   version "22.0.4"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-util/-/jest-util-22.0.4.tgz#d920a513e0645aaab030cee38e4fe7d5bed8bb6d"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-22.0.4.tgz#d920a513e0645aaab030cee38e4fe7d5bed8bb6d"
   dependencies:
     callsites "^2.0.0"
     chalk "^2.0.1"
@@ -3642,7 +3642,7 @@ jest-validate@^21.1.0, jest-validate@^21.2.1:
 
 jest-validate@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jest-validate/-/jest-validate-22.0.3.tgz#2850d949a36c48b1a40f7eebae1d8539126f7829"
+  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-22.0.3.tgz#2850d949a36c48b1a40f7eebae1d8539126f7829"
   dependencies:
     chalk "^2.0.1"
     jest-get-type "^22.0.3"
@@ -3676,7 +3676,7 @@ jschardet@^1.4.2:
 
 jsdom@^11.5.1:
   version "11.5.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/jsdom/-/jsdom-11.5.1.tgz#5df753b8d0bca20142ce21f4f6c039f99a992929"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.5.1.tgz#5df753b8d0bca20142ce21f4f6c039f99a992929"
   dependencies:
     abab "^1.0.3"
     acorn "^5.1.2"
@@ -3917,7 +3917,7 @@ lcid@^1.0.0:
 
 left-pad@^1.2.0:
   version "1.2.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/left-pad/-/left-pad-1.2.0.tgz#d30a73c6b8201d8f7d8e7956ba9616087a68e0ee"
+  resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.2.0.tgz#d30a73c6b8201d8f7d8e7956ba9616087a68e0ee"
 
 level-blobs@^0.1.7:
   version "0.1.7"
@@ -4153,7 +4153,7 @@ lodash.some@^4.6.0:
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
+  resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
 
 lodash@^4.11.2, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.5.1:
   version "4.17.4"
@@ -4513,7 +4513,7 @@ number-is-nan@^1.0.0:
 
 nwmatcher@^1.4.3:
   version "1.4.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/nwmatcher/-/nwmatcher-1.4.3.tgz#64348e3b3d80f035b40ac11563d278f8b72db89c"
+  resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.3.tgz#64348e3b3d80f035b40ac11563d278f8b72db89c"
 
 oauth-sign@~0.8.1, oauth-sign@~0.8.2:
   version "0.8.2"
@@ -4712,7 +4712,7 @@ parse5@^1.5.1:
 
 parse5@^3.0.2:
   version "3.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
   dependencies:
     "@types/node" "*"
 
@@ -4808,7 +4808,7 @@ pkg-dir@^1.0.0:
 
 pkg-dir@^2.0.0:
   version "2.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/pkg-dir/-/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
 
@@ -4824,7 +4824,7 @@ pluralize@^7.0.0:
 
 pn@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/pn/-/pn-1.0.0.tgz#1cf5a30b0d806cd18f88fc41a6b5d4ad615b3ba9"
+  resolved "https://registry.yarnpkg.com/pn/-/pn-1.0.0.tgz#1cf5a30b0d806cd18f88fc41a6b5d4ad615b3ba9"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -4847,7 +4847,7 @@ pretty-format@^21.2.1:
 
 pretty-format@^22.0.3:
   version "22.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/pretty-format/-/pretty-format-22.0.3.tgz#a2bfa59fc33ad24aa4429981bb52524b41ba5dd7"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-22.0.3.tgz#a2bfa59fc33ad24aa4429981bb52524b41ba5dd7"
   dependencies:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
@@ -4914,7 +4914,7 @@ punycode@^1.2.4, punycode@^1.4.1:
 
 punycode@^2.1.0:
   version "2.1.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
 
 qs@~6.4.0:
   version "6.4.0"
@@ -5122,13 +5122,13 @@ repeating@^2.0.0:
 
 request-promise-core@1.1.1:
   version "1.1.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/request-promise-core/-/request-promise-core-1.1.1.tgz#3eee00b2c5aa83239cfb04c5700da36f81cd08b6"
+  resolved "https://registry.yarnpkg.com/request-promise-core/-/request-promise-core-1.1.1.tgz#3eee00b2c5aa83239cfb04c5700da36f81cd08b6"
   dependencies:
     lodash "^4.13.1"
 
 request-promise-native@^1.0.3:
   version "1.0.5"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/request-promise-native/-/request-promise-native-1.0.5.tgz#5281770f68e0c9719e5163fd3fab482215f4fda5"
+  resolved "https://registry.yarnpkg.com/request-promise-native/-/request-promise-native-1.0.5.tgz#5281770f68e0c9719e5163fd3fab482215f4fda5"
   dependencies:
     request-promise-core "1.1.1"
     stealthy-require "^1.1.0"
@@ -5227,7 +5227,7 @@ resolve@^1.1.6, resolve@^1.2.0, resolve@^1.3.2, resolve@^1.4.0:
 
 resolve@^1.1.7:
   version "1.5.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
   dependencies:
     path-parse "^1.0.5"
 
@@ -5460,7 +5460,7 @@ shebang-regex@^1.0.0:
 
 shell-quote@^1.6.1:
   version "1.6.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
   dependencies:
     array-filter "~0.0.0"
     array-map "~0.0.0"
@@ -5522,7 +5522,7 @@ source-map-support@^0.4.15:
 
 source-map-support@^0.5.0:
   version "0.5.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/source-map-support/-/source-map-support-0.5.0.tgz#2018a7ad2bdf8faf2691e5fddab26bed5a2bacab"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.0.tgz#2018a7ad2bdf8faf2691e5fddab26bed5a2bacab"
   dependencies:
     source-map "^0.6.0"
 
@@ -5542,7 +5542,7 @@ source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3, sour
 
 source-map@^0.6.0:
   version "0.6.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 spawn-command@^0.0.2-1:
   version "0.0.2"
@@ -5582,7 +5582,7 @@ sshpk@^1.7.0:
 
 stack-utils@^1.0.1:
   version "1.0.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/stack-utils/-/stack-utils-1.0.1.tgz#d4f33ab54e8e38778b0ca5cfd3b3afb12db68620"
+  resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.1.tgz#d4f33ab54e8e38778b0ca5cfd3b3afb12db68620"
 
 staged-git-files@0.0.4:
   version "0.0.4"
@@ -5594,7 +5594,7 @@ staged-git-files@0.0.4:
 
 stealthy-require@^1.1.0:
   version "1.1.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
+  resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
 
 stream-browserify@^2.0.1:
   version "2.0.1"
@@ -5722,7 +5722,7 @@ structured-source@^3.0.2:
 
 subarg@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/subarg/-/subarg-1.0.0.tgz#f62cf17581e996b48fc965699f54c06ae268b8d2"
+  resolved "https://registry.yarnpkg.com/subarg/-/subarg-1.0.0.tgz#f62cf17581e996b48fc965699f54c06ae268b8d2"
   dependencies:
     minimist "^1.1.0"
 
@@ -5858,7 +5858,7 @@ tough-cookie@>=2.3.3, tough-cookie@^2.3.2, tough-cookie@^2.3.3, tough-cookie@~2.
 
 tr46@^1.0.0:
   version "1.0.1"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/tr46/-/tr46-1.0.1.tgz#a8b13fd6bfd2489519674ccde55ba3693b706d09"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-1.0.1.tgz#a8b13fd6bfd2489519674ccde55ba3693b706d09"
   dependencies:
     punycode "^2.1.0"
 
@@ -5896,7 +5896,7 @@ tryit@^1.0.1:
 
 ts-jest@^22.0.0:
   version "22.0.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/ts-jest/-/ts-jest-22.0.0.tgz#cce1a5f1106150ca002d09f7e85913355ceb5e8d"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-22.0.0.tgz#cce1a5f1106150ca002d09f7e85913355ceb5e8d"
   dependencies:
     babel-core "^6.24.1"
     babel-plugin-istanbul "^4.1.4"
@@ -6216,7 +6216,7 @@ whatwg-url@^4.3.0:
 
 whatwg-url@^6.3.0:
   version "6.4.0"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/whatwg-url/-/whatwg-url-6.4.0.tgz#08fdf2b9e872783a7a1f6216260a1d66cc722e08"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-6.4.0.tgz#08fdf2b9e872783a7a1f6216260a1d66cc722e08"
   dependencies:
     lodash.sortby "^4.7.0"
     tr46 "^1.0.0"
@@ -6360,7 +6360,7 @@ yargs-parser@^8.0.0:
 
 yargs@^10.0.3:
   version "10.0.3"
-  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/yargs/-/yargs-10.0.3.tgz#6542debd9080ad517ec5048fb454efe9e4d4aaae"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-10.0.3.tgz#6542debd9080ad517ec5048fb454efe9e4d4aaae"
   dependencies:
     cliui "^3.2.0"
     decamelize "^1.1.1"

@@ -1,0 +1,6 @@
+{
+  "extends": "./node_modules/kcd-scripts/eslint.js",
+  "rules": {
+    "babel/semi": [2, "always"]
+  }
+}
