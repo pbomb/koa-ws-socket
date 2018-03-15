@@ -13,9 +13,9 @@ module.exports = Object.assign(jest, {
   coverageThreshold: {
     global: {
       branches: 0,
-      functions: 20,
+      functions: 30,
       lines: 15,
-      statements: 15,
+      statements: 19,
     },
   },
 });
