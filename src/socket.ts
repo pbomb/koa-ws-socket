@@ -4,7 +4,7 @@ import * as WebSocket from 'ws';
 import { EventHandler, SocketContext } from './index';
 
 export default class Socket {
-  middleware: compose.ComposedMiddleware<SocketContext> | null;
+  middleware: compose.ComposedMiddleware<SocketContext>;
   ws: WebSocket;
   request: http.ServerRequest;
 
@@ -12,7 +12,7 @@ export default class Socket {
     ws: WebSocket,
     request: http.ServerRequest,
     listeners: Map<string, EventHandler[]>,
-    middleware: compose.ComposedMiddleware<SocketContext> | null
+    middleware: compose.ComposedMiddleware<SocketContext>
   ) {
     this.ws = ws;
     this.request = request;
@@ -23,7 +23,7 @@ export default class Socket {
 
   update(
     listeners: Map<string, EventHandler[]>,
-    middleware: compose.ComposedMiddleware<SocketContext> | null
+    middleware: compose.ComposedMiddleware<SocketContext>
   ) {
     this.ws.removeAllListeners();
     this.middleware = middleware;
@@ -43,7 +43,7 @@ export default class Socket {
    * Adds a specific event and callback to this socket
    */
   on(event: string, handler: EventHandler) {
-    this.ws.on(event, (message: any) => {
+    this.ws.on(event, async (message: any) => {
       const ctx: SocketContext = {
         event,
         data: message,
@@ -51,16 +51,7 @@ export default class Socket {
         socket: this.ws,
       };
 
-      this.invokeHandler(handler, ctx, message);
+      await this.middleware(ctx, () => handler(ctx, message));
     });
-  }
-
-  async invokeHandler(handler: EventHandler, ctx: SocketContext, message: any) {
-    if (!this.middleware) {
-      await handler(ctx, message);
-      return;
-    }
-
-    await this.middleware(ctx, () => handler(ctx, message));
   }
 }

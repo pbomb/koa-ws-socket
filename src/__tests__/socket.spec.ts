@@ -1,71 +1,88 @@
+import compose from 'koa-compose';
+import * as WebSocket from 'ws';
 import Socket from '../socket';
-const compose = require('koa-compose');
+import { SocketContext } from '../index';
+import { EventEmitter } from 'events';
 
 describe('Socket', () => {
-  let MockWebSocket: any;
+  let mockWebSocket: EventEmitter;
 
   beforeEach(async () => {
     jest.useRealTimers();
-    MockWebSocket = {
-      on: jest.fn(),
-      removeAllListeners: jest.fn(),
-    };
+    mockWebSocket = new EventEmitter();
   });
 
-  describe('invokeHandler()', () => {
+  describe('event listeners', () => {
     let socket: Socket;
     let handler: any;
-    let context: any;
+    const context: any = {};
+    let steps: string[] = [];
+    let handlerPromise: Promise<void>;
 
     beforeEach(async () => {
-      context = { state: '' };
+      steps = [];
 
-      handler = jest.fn(async (ctx, next) => {
-        return new Promise(resolve => {
+      handlerPromise = new Promise(resolve => {
+        handler = async (ctx: SocketContext, next: Function) => {
           setTimeout(() => {
-            ctx.state += '[handler]';
+            steps.push('[handler]');
             resolve();
-          }, 100);
-        });
+          }, 10);
+          return handlerPromise;
+        };
       });
     });
 
     describe('Socket is created with one middleware', () => {
-      let middleware;
+      let middleware: compose.ComposedMiddleware<SocketContext>;
+      let middlewarePromise: Promise<void>;
 
       beforeEach(async () => {
-        middleware = compose([
-          async (ctx, next) => {
-            ctx.state += '[before]';
-            await next(ctx);
-            ctx.state += '[after]';
-          },
-        ]);
+        const firstMiddleware = async (ctx: SocketContext, next: Function) => {
+          steps.push('[before]');
+          await next(ctx);
+          steps.push('[after]');
+        };
 
-        socket = new Socket(MockWebSocket, null as any, [] as any, middleware);
-      });
+        middlewarePromise = new Promise(resolve => {
+          middleware = compose([
+            (ctx, next) => firstMiddleware(ctx, next).then(resolve),
+          ]);
+        });
 
-      it('invokes handler once', async () => {
-        await socket.invokeHandler(handler, context, 'message');
-        expect(handler).toHaveBeenCalledTimes(1);
+        socket = new Socket(
+          mockWebSocket as WebSocket,
+          null as any,
+          [] as any,
+          middleware
+        );
+        socket.on('message', handler);
       });
 
       it('invokes the handler in correct order', async () => {
-        await socket.invokeHandler(handler, context, 'message');
+        mockWebSocket.emit('message', 'message');
+        await middlewarePromise;
 
-        expect(context).toEqual({ state: '[before][handler][after]' });
+        expect(steps).toEqual(['[before]', '[handler]', '[after]']);
       });
     });
 
     describe('Socket is created with no middleware', () => {
       beforeEach(async () => {
-        socket = new Socket(MockWebSocket, null as any, [] as any, compose([]));
+        socket = new Socket(
+          mockWebSocket as WebSocket,
+          null as any,
+          [] as any,
+          compose([])
+        );
+        socket.on('message', handler);
       });
 
       it('invokes the handler correctly', async () => {
-        await socket.invokeHandler(handler, context, 'message');
+        mockWebSocket.emit('message', 'message');
+        await handlerPromise;
 
-        expect(context).toEqual({ state: '[handler]' });
+        expect(steps).toEqual(['[handler]']);
       });
     });
   });
