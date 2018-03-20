@@ -4,7 +4,7 @@
   "description": "Attaches ws sockets to koa using koa-style middleware",
   "files": ["lib"],
   "main": "lib/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/pbomb/koa-ws-socket.git",
   "author": "Matt Parrish <matt.r.parrish@gmail.com>",
   "engines": {
