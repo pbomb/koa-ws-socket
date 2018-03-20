@@ -60,7 +60,7 @@ export class WsSocket {
       this.composed
     );
     this.connections.set(socketId, socketInstance);
-    ws.on('disconnect', () => {
+    ws.on('close', () => {
       this.connections.delete(socketId);
     });
 
@@ -72,7 +72,7 @@ export class WsSocket {
             event: 'connection',
             data: socketInstance,
             request,
-            socket: ws,
+            socket: socketInstance.ws,
           },
           null
         );

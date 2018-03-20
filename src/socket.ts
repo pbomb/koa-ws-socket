@@ -34,24 +34,20 @@ export default class Socket {
       }
 
       handlers.forEach(handler => {
-        this.on(event, handler);
+        this.ws.on(event, async message => {
+          const ctx: SocketContext = {
+            event,
+            data: message,
+            request: this.request,
+            socket: this.ws,
+          };
+          if (event === 'message') {
+            await this.middleware(ctx, () => handler(ctx, message));
+          } else {
+            await handler(ctx, message);
+          }
+        });
       });
-    });
-  }
-
-  /**
-   * Adds a specific event and callback to this socket
-   */
-  on(event: string, handler: EventHandler) {
-    this.ws.on(event, async (message: any) => {
-      const ctx: SocketContext = {
-        event,
-        data: message,
-        request: this.request,
-        socket: this.ws,
-      };
-
-      await this.middleware(ctx, () => handler(ctx, message));
     });
   }
 }
