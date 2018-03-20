@@ -12,7 +12,7 @@ module.exports = Object.assign(jest, {
   testRegex: '/__tests__/.*\\.(ts|tsx|js)$',
   coverageThreshold: {
     global: {
-      branches: 0,
+      branches: 10,
       functions: 30,
       lines: 15,
       statements: 19,
