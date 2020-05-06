@@ -44,7 +44,12 @@ export class WsSocket {
         return enhancedApp.server;
       };
     }
-    this.wss = new WebSocket.Server({ server: enhancedApp.server });
+    this.wss = new WebSocket.Server(
+      { 
+        server: enhancedApp.server,
+        clientTracking: false,
+      }
+    );
 
     enhancedApp.ws = this;
 
